@@ -1,0 +1,11 @@
+{
+  "name": "Python Codespace",
+  "postCreateCommand": "uv venv && source .venv/bin/activate && uv sync",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": ".venv/bin/python"
+      }
+    }
+  }
+}

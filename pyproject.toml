@@ -1,0 +1,26 @@
+[project]
+name = "llm-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ailearner415", email = "ailearner415@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "jupyter>=1.1.1",
+    "notebook>=7.6.1",
+    "numpy>=2.5.1",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "torch>=2.13.0",
+    "transformers>=5.14.1",
+]
+
+[project.scripts]
+llm-course = "llm_course:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
