@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # Load variables from .env into os.environ
 load_dotenv()
 my_api_key = os.getenv("OPENAI_API_KEY")
-if not api_key:
+if not my_api_key:
   raise ValueError("OPENAI_API_KEY was not found in .env or environment variables.")
 # Code Block End - Finish getting OpenAI API key.
 # You can reference api key using the following variable 
