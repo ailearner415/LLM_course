@@ -1,3 +1,11 @@
+# To run this script, you will need to setup Environment variable first.
+#    1. Opening Edit environment variables for your account
+#    2. Clicking New...
+#    3. Setting:
+#           Variable name: OPENAI_API_KEY
+#           Variable value: Your_OpenAI_API_Key
+#    4. Clicking OK
+
 import asyncio
 from agents import Agent,function_tool,Runner
 
@@ -42,7 +50,8 @@ def get_software_install_guide(software_name: str) -> str:
 
 helpdesk_agent=Agent(
     name="IT Help Desk Agent",
-    model="gpt-5.4-mini",
+    #model="gpt-5.4-mini",
+    model="gpt-6-luna",
      instructions=(
         "You are a helpful IT support assistant for a company. "
         "When a user asks a question, use the available tools to find the answer. "
