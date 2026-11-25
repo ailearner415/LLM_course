@@ -12,7 +12,7 @@ from azure.ai.projects.models import PromptAgentDefinition
 PROJECT_ENDPOINT="https://ailearner-foundry-dev-eus-01.services.ai.azure.com/api/projects/ai-103-project"
 AGENT_NAME="IT-HelpDesk-Agent"
 #DEPLOYMENT_NAME="gpt-5.4"
-DEPLOYMENT_NAME="gpt-4o-mini"
+DEPLOYMENT_NAME="gpt-4.1-mini"
 
 client=AIProjectClient(
     endpoint=PROJECT_ENDPOINT,
