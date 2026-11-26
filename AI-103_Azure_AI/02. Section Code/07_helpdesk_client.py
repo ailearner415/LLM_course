@@ -1,14 +1,23 @@
+from azure.identity import InteractiveBrowserCredential
+credential = InteractiveBrowserCredential(
+    tenant_id="dd0b5b86-1da9-452d-9611-8ac84434832c"
+)
+
+
+
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 import json
 
 from helpdesk_functions import run_local_function
 
-PROJECT_ENDPOINT = "https://foundry-dev-eus-01.services.ai.azure.com/api/projects/ai-103-project"
+#PROJECT_ENDPOINT = "https://foundry-dev-eus-01.services.ai.azure.com/api/projects/ai-103-project"
+PROJECT_ENDPOINT="https://ailearner-foundry-dev-eus-01.services.ai.azure.com/api/projects/ai-103-project"
 
 project = AIProjectClient(
     endpoint=PROJECT_ENDPOINT,
-    credential=DefaultAzureCredential(),
+    #credential=DefaultAzureCredential(),
+    credential=credential
 )
 client = project.get_openai_client()
 AGENT_NAME = "IT-HelpDesk-Agent"
