@@ -1,3 +1,8 @@
+
+# This script is not needed. This can be deleted.
+# We will use the file helpdesk_function.py instead in 07_helpdesk_client.py
+
+
 def get_password_reset_steps() -> str:
     """Returns the steps to reset a company account password."""
     return (
